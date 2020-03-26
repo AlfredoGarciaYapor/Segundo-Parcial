@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv='cache-control' content='no-cache'>
+	<meta http-equiv='expires' content='0'>
+	<meta http-equiv='pragma' content='no-cache'>
+
+	<title>Examen Segundo Parcial</title>
+	<style src="manzanasCSS.css"></style>
+	<script type="text/javascript" src="manzanasJS.js"></script>
+</head>
+<body>
+	<h1>Producción de Manzanas</h1>
+
+
+	<div>
+		
+
+		<div class="column">
+			<img id="image" src="manzanas.jpg" width="300">
+		</div>
+
+		<div class="column">
+			<div>
+				<label>Producción total</label>
+				<input type="text" id="txtTotal" value="250" readonly>
+				<input  type="button" onclick="mostrarTotal()" value="Número total de manzanas">
+
+				<br>
+				<br>
+
+				<label>Producción actual</label>
+				<input type="text" id="txtActual" value="0" readonly>
+				<input type="button" onclick="mostrarActual()" value="Número actual de manzanas">
+			</div>
+
+			<br>
+
+			<div class="botones">
+				<input onclick="agregar5()" type="button" value=5> 
+				<input onclick="agregar15()" type="button" value=15>
+				<input onclick="agregar30()" type="button" value=30>
+				<input onclick="agregar50()" type="button" value=50>
+			</div>
+			<div>
+				<label>Porcentaje de Producción</label>
+				<input type="text" id="txtPorcentaje"  readonly>
+				<input  type="button" onclick="calcular()" value="calcular">
+				<br>
+				<br>
+				<button onclick="reset()">Reiniciar</button>
+			</div>
+		</div>
+
+	</div>
+	
+</body>
+</html>
