@@ -1,7 +1,6 @@
 
 
 var x = 0;
-document.getElementById("txtActual").value = x;
 
 
 function agregarManzanas(x, y){
